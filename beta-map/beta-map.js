@@ -3,7 +3,7 @@ const { v4: uuidv4 } = require('uuid');
 
 const land = [];
 
-let mapSize = 15;
+let mapSize = 4;
 
 for (let row = 0; row < mapSize; row++) {
     for (let col = 0; col < mapSize; col++) {
