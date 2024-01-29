@@ -8,13 +8,13 @@ let mapSize = 15;
 for (let row = 0; row < mapSize; row++) {
     for (let col = 0; col < mapSize; col++) {
         const id = uuidv4();
-        const position = generateRandomPosition(row, col);
+        const position = generatePosition(row, col);
         const owner = null;
         land.push({ id, position, owner });
     }
 }
 
-function generateRandomPosition(row, col) {
+function generatePosition(row, col) {
     const x = col - Math.floor(mapSize / 2);
     const y = row - Math.floor(mapSize / 2);
     return [x, y];
